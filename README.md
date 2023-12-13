@@ -13,3 +13,4 @@
   2.3 cheapest10 ArrayList<RealEstateCase>以MyAPR5168Crawler.checkNewestAPRCase(RealEstateCase)遍歷回傳對應的最近一筆案例RealEstateCase，生成另一個ArrayList<RealEstateCase>
 3. 問題發生：
   執行2.3時，根據導入RealEstateCase的caseAddress，會於MyAPR5168Crawler Line.82發生元素集合為空，無資料可爬取。但以Line.67生成的網址從瀏覽器開啟，又可以找到想爬取的Tag內容
+  確定會發生元素集合為空的其中一個設定是MyHouseFunFilterSetting物件regionIndex1=15, regionIndex2=2(高雄市左營區) 
